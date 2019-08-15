@@ -1,37 +1,83 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html style="background: #2f3634">
+  <head>
+    <title>Lava Programming Language | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Montserrat|Red+Hat+Display&display=swap" rel="stylesheet">
+    <script src="js/githubicon.js"></script>
+    <style>
+      #div-navbar {
+        display: block;
+        margin: auto;
+        height: 150px;
+        background: linear-gradient(to bottom, #77c4e3, #8176b5);
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.15);
 
-You can use the [editor on GitHub](https://github.com/lavalang/lava-language.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+      }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+      #title {
+        padding: 45px 0px 0px 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        color: #333;
+        display: inline-block;
+        user-select: none;
+      }
+      #title:hover {
+        color: #fff;
+      }
 
-### Markdown
+      #github {
+        width: 40px;
+        position: absolute;
+        top: 60px;
+        left: 355px;
+        user-select: none;
+      }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+      pre {
+        color: white;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+      }
 
-```markdown
-Syntax highlighted code block
+      a {
+        text-decoration: none;
+        color: #8176b5;
+      }
 
-# Header 1
-## Header 2
-### Header 3
+      #docs {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        color: #333;
+        position: absolute;
+        left: 1500px;
+        top: 55px
+      }
 
-- Bulleted
-- List
+      #docs:hover {
+        color: white;
+      }
+    </style>
+  </head>
 
-1. Numbered
-2. List
+  <body>
+    <div id="div-navbar" style=" ">
+      <a href="#"> <div id="title">
+        Lava Language
+      </div><a id="docs" href="pages/documentation.html">documentation</a>
 
-**Bold** and _Italic_ and `Code` text
+      <a href="https://github.com/lavalang/lava-language/"><div id="div-github">
+        <img id="github" src="images/github-icon.png" onmouseover="hoverOver()" onmouseout="notHovering()">
+        </img>
+      </div></a>
+    </div>
 
-[Link](url) and ![Image](src)
-```
+    <pre>
+    Lava is a simple programming language for configurations/storage.
+    To learn more about lava, head to the <a href="pages/documentation.html">documentation</a> page!
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lavalang/lava-language.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  </body>
+</html>

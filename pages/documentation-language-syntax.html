@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html style="background: #555">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Montserrat|Red+Hat+Display|Roboto+Mono&display=swap" rel="stylesheet"/>
+    <style>
+      #navbar {
+        background: #77c4e3;
+        top: 0px;
+        left: 0px;
+        width: 96.9%;
+        padding: 30px;
+        font-size: 30px;
+        font-family: 'Roboto Mono';
+        color: white;
+        user-select: none;
+      }
+
+      #sidebar {
+        position: absolute;
+        width: 300px;
+        height: 87%;
+        overflow: auto;
+        color: white;
+        background: #333;
+
+      }
+      a {
+        text-decoration: none;
+        color: #8176b5;
+      }
+      h3 {
+        color: #77c4e3;
+      }
+      pre {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+      }
+      #text {
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        left: 350px;
+        color: white;
+      }
+      #code {
+        background: #333;
+        width: 100%;
+        border-radius: 15px;
+        padding: 10px;
+      }
+      body {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="documentation.html"><div id="navbar">
+  Lava Documentation
+    </div></a>
+    <pre><div id="sidebar">
+      <h3><pre>        Information for Newbies</h3>          <a href="documentation-gettingstarted.html">Getting Started</a>
+      <h3><pre>        Lava Language</h3>          <a href="documentation-language-syntax.html">Syntax</a>
+        <h3><pre>        Java Library</h3>          <a href="documentation-java-parser.html">Java Parser</a>
+    </div></pre>
+
+    <div id="text">
+      <h3>Syntax</h3>
+      <pre>Making basic objects in lava is simple, just use this simple syntax:
+        <div id="code">
+[key] = [value]
+        </div>
+  An object can have any of these 3 types of values;
+      - boolean(true/false)
+      - integer(0-9)
+      - string(anything in between quotes)
+
+  For example, here are some lava objects:
+  <div id="code"><span style="padding: 0px 0px 0px 240px;color: gray; font-size: 10px;">language: lava</span>
+  <span style="color: lightblue">myString</span> = <span style="color: violet">"Anything in between quotes, including symbols!"</span>
+  <span style="color: lightblue">myInt</span> = <span style="color: violet">111</span>
+  <span style="color: lightblue">myBool</span> = <span style="color: violet">true</span>
+  </div>
+  lists are not currently an option for a value, but don't worry, they're coming soon!
+  Also, dont forget comments! You can tell people what your objects are, like this;
+  <div id="code"><span style="padding: 0px 0px 0px 240px;color: gray; font-size: 10px;">language: lava</span>
+  <span style="color: gray">// this is a string object!</span>
+  <span style="color: lightblue">myString</span> = <span style="color: violet">"Anything in between quotes, including symbols!"</span>
+  </div>
+      </pre>
+    </div>
+  </body>
+</html>
